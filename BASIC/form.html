@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../wwwroot/Bootstrap/css/bootstrap.min.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <form>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" placeholder="Kullanıcı adı">
+            </div>
+           
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Email olarak girin</div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" id="password" placeholder="Email adresinizi girin">
+                <span class="input-group-text">@gmail.com</span>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" name="checkbox" id="checkbox">
+                <label for="checkbox" class="form-check-label">Check me</label>
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text">₺</span>
+                <input type="number" class="form-control" placeholder="Maaş Beklentiniz">
+                <span class="input-group-text">.00</span>
+
+            </div>
+            <div class="mb-3">
+                <select class="form-select" disabled>
+                    <option selected>Şehir Seç</option>
+                    <option>Mersin</option>
+                    <option>Van</option>
+                    <option>İstanbul</option>
+                </select>
+            </div>
+            <div class="mb-3 form-check form-switch">
+                <input type="radio" class="form-check-input">
+                <label for="cinsiyet">Erkek</label>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="radio" class="form-check-input">
+                <label for="cinsiyet">Kadın</label>
+            </div>
+            <div class="mb-3">
+                <label for="range" class="form-label">Önem Derecesi</label>
+                <input type="range" class="form-range" name="range" id="range" min="0" max="5">
+            </div>
+            <div class="mb-3">
+                <label for="textarea" class="form-label">Sorunuz</label>
+                <textarea name="textarea" id="textarea" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../wwwroot/Bootstrap/css/bootstrap.min.css">
+    <title>Navbar</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">Techcareer.net</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active" aria-current="page">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link active" aria-current="page">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            Kategoriler
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="" class="dropdown-item"></a>Teknoloji</li>
+                            <li><a href="" class="dropdown-item"></a>Sanat</li>
+                        </ul>
+                    </li>
+                </ul>
+                <form role="search" class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Ara" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">ARA</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselItem" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/400" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/400" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/150" class="img-fluid d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselItem">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselItem">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+    </div>
+
+
+    <script src="../wwwroot/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="../wwwroot/Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
