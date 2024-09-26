@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../wwwroot/Bootstrap/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">Proje</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="" class="nav-link active">AnaSayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link active">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link active">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Slider-->
+
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!--Accordion-->
+
+    <div class=" container mt-5" id="accordionExample">
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Soru 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" >
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        Soru 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" >
+                    <div class="accordion-body">
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-section" class="container mt-5">
+        <h2>Toast Bildirimi</h2>
+        <button class="btn btn-primary" onclick="showToast()">Toaset Göster</button>
+        <div class="toaset-container position-fixed bottom-0 end-0 pd-3">
+            <div id="liveToast" class="toast" role="alert" arive-live="asertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="https://via.placeholder.com/20" class="rounded me-2" alt="">
+                    <strong class="me-auto">Techcareer.net</strong>
+                    <small>Şimdi</small>
+                    <button class="btn-close" type="button" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Bu bir toast mesajıdır!
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../wwwroot/Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../wwwroot/Bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        function showToast(){
+            var toastEl = document.getElementById('liveToast');
+            var toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        }
+    </script>
+</body>
+</html>
